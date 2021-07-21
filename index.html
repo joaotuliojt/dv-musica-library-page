@@ -1,4 +1,100 @@
-Search artists, playlists or tracks
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Library</title>
+    <!-- Bibliotecas -->
+    <script src="https://kit.fontawesome.com/777e5462d7.js" crossorigin="anonymous"></script>
+    <!-- CSS -->
+    <link rel="stylesheet" href="index.css">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;700&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <section class="wrapper">
+        <div class="sidebar">
+            <div class="perfil">
+                <div class="img-perfil"></div>
+                <div>
+                    <h4 class="name">Dany Schudler</h4>
+                    <a class="edit-profile" href="#">Edit Profile <i class="fas fa-cog"></i></a>
+                </div>
+            </div>
+            <nav>
+                <div class="separator"></div>
+                <ul class="navigation">
+                    <li><a href="#"><i class="far fa-circle"></i>Overview</a></li>
+                    <li><a href="#"><i class="far fa-newspaper"></i>News</a></li>
+                    <li><a href="#"><i class="fas fa-music"></i>Playlists</a></li>
+                    <li><a href="#"><i class="fas fa-signal"></i>Discover</a></li>
+                </ul>
+                <div class="separator"></div>
+                <ul class="navigation">
+                    <li><a href="#"><i class="fas fa-th-list"></i>Dashboard</a></li>
+                    <li><a href="#"><i class="far fa-comment-alt"></i>Messages</a></li>
+                    <li><a href="#"><i class="far fa-bell"></i>Notifications</a></li>
+                    <li><a href="#"><i class="far fa-user-circle"></i>Account</a></li>
+                </ul>
+            </nav>
+        </div>
+        <main class="main">
+            <div class="search">
+                <i style="color:var(--white)" class="fas fa-search"></i>
+                <input  type="tex" placeholder="Search artists, playlists or tracks">
+            </div>
+            <div class="playlists-wrapper">
+                <h1>Featured Playlists</h1>
+                <div class="playlists">
+                    <div class="card-playlist">
+                        <div class="capa">
+                            <img src="./assets/playlist1.jpg" alt="">
+                        </div>
+                        <a href="#" class="music-title">Only STARDUST</a>
+                        <p>24 tracks</p>
+                    </div>
+                    <div class="card-playlist">
+                        <div class="capa">
+                            <img src="./assets/playlist2.jpg" alt="">
+                        </div>
+                        <a href="#" class="music-title">Only STARDUST</a>
+                        <p>24 tracks</p>
+                    </div>
+                    <div class="card-playlist">
+                        <div class="capa">
+                            <img src="./assets/playlist3.jpg" alt="">
+                        </div>
+                        <a href="#" class="music-title">Only STARDUST</a>
+                        <p>24 tracks</p>
+                    </div> 
+                    <div class="card-playlist">
+                        <div class="capa">
+                            <img src="./assets/playlist4.jpg" alt="">
+                        </div>
+                        <a href="#" class="music-title">Only STARDUST</a>
+                        <p>24 tracks</p>
+                    </div>              
+                </div>
+            </div>
+            <div class="profile-tracks">
+                <div class="profile-views">
+                    <h2>Profile Views</h2>
+                    <div class="profiles">
+                        
+                    </div>
+                </div>
+                
+            </div>
+        </main>
+    </section>
+</body>
+</html>
+
+<!-- Search artists, playlists or tracks
 Dany Schudler
 Edit Profile
 Overview
@@ -11,4 +107,4 @@ Notifications
 Account
 Featured Playlists
 Profile Views
-Tracks
+Tracks -->

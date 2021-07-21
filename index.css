@@ -1,0 +1,163 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+html{
+    --black: #040517;
+    --white:#e5e5e5e7;
+    --blue: rgb(32, 15, 86);
+    font-size: 62.5%;
+}
+body{
+    font-size: 1.6rem;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+a{
+    color: var(--white);
+    filter: brightness(0.4);
+    transition: 0.25s;
+}
+a:hover{
+    filter: brightness(1);
+}
+::-webkit-scrollbar{
+    background: var(--black);
+    height: 0.8rem;
+    border-radius: 2rem;
+}
+::-webkit-scrollbar-thumb{
+    background: rgb(52,7,120);
+    background: linear-gradient(90deg, rgba(52,7,120,1) 0%, rgba(33,8,116,1) 100%);
+    border-radius: 2rem;
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 24rem 1fr;
+    height: 100%;
+    color:var(--white);
+    background: rgb(4,5,23);
+    background: linear-gradient(90deg, rgba(4,5,23,1) 0%, rgba(32,15,86,1) 100%);
+}
+/* Sidebar lateral + Perifl */
+.wrapper .sidebar{
+    background: var(--black);
+    padding: 70px 1.6rem 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.wrapper .sidebar .perfil{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    align-self: flex-start;
+}
+.wrapper .sidebar .perfil .img-perfil{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 0.4rem;
+    background-image: url('./assets/profile.jpg');
+    background-position: center;
+    background-size: cover;
+}
+.wrapper .sidebar .perfil .name{
+    margin-bottom: 0.5rem;
+}
+.wrapper .sidebar .perfil .edit-profile{
+    font-size: 1.4rem;
+}
+.wrapper .sidebar nav{
+    display: flex;
+    flex-direction: column;
+}
+.wrapper .sidebar nav .navigation li{
+    margin-bottom: 0.4rem;
+}
+.wrapper .sidebar nav .navigation li i{
+    margin-right: 1rem;
+}
+.wrapper .sidebar nav .navigation li:last-child{
+    margin: 0;
+}
+.separator{
+    width: 100%;
+    height: 0.2rem;
+    border-radius: 8px;
+    background: var(--white);
+    opacity: 0.1;
+    margin: 2rem 0;
+}
+
+.wrapper .main{
+    padding-top: 1rem;
+    padding-left: 5rem;
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 4rem 1fr 1fr;
+    gap: 2rem;
+}
+
+.wrapper .main .search{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+    width: 25rem;
+}
+.wrapper .main .search input{
+    width: 100%;
+    background: transparent;
+    border:none;
+    outline: none;
+    color: var(--white);
+}
+
+
+/* Playlists */
+.wrapper .main .playlists{
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    overflow-x: scroll;
+}
+
+.wrapper .main .playlists .card-playlist{
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    flex: 0 0 38rem;
+}
+.wrapper .main .playlists .card-playlist .music-title{
+    font-size: 2.4rem;
+    filter: none;
+    font-weight: 600;
+}
+.wrapper .main .playlists .card-playlist > p{
+    font-weight: 400;
+    font-size: 1.4rem;
+    opacity: 0.5;
+}
+.wrapper .main .playlists .card-playlist .capa img{
+    width: 100%;
+    height: 100%;
+    transition: 0.25s;
+    object-fit: cover;
+}
+.wrapper .main .playlists .card-playlist .capa:hover img{
+    transform: scale(1.2);
+}
+
+.wrapper .main .playlists .card-playlist .capa{
+    height: 20rem;
+    overflow: hidden;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 1.4rem;
+}
