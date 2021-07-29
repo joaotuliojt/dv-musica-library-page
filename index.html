@@ -16,6 +16,7 @@
 
 </head>
 <body>
+    <div class="toggle-menu"> </div>
     <section class="wrapper">
         <div class="sidebar">
             <div class="perfil">
@@ -28,7 +29,7 @@
             <nav>
                 <div class="separator"></div>
                 <ul class="navigation">
-                    <li><a href="#"><i class="far fa-circle"></i>Overview</a></li>
+                    <li><a href="#"><i class="fas fa-fan"></i>Overview</a></li>
                     <li><a href="#"><i class="far fa-newspaper"></i>News</a></li>
                     <li><a href="#"><i class="fas fa-music"></i>Playlists</a></li>
                     <li><a href="#"><i class="fas fa-signal"></i>Discover</a></li>
@@ -44,7 +45,7 @@
         </div>
         <main class="main">
             <div class="search">
-                <i style="color:var(--white)" class="fas fa-search"></i>
+                <i class="fas fa-search"></i>
                 <input  type="tex" placeholder="Search artists, playlists or tracks">
             </div>
             <div class="playlists-wrapper">
@@ -80,31 +81,99 @@
                     </div>              
                 </div>
             </div>
-            <div class="profile-tracks">
-                <div class="profile-views">
+            <section class="profiles-and-tracks">
+                <div class="left">
                     <h2>Profile Views</h2>
-                    <div class="profiles">
-                        
+
+                    <div class="container">
+
+                        <div class="card-profile">
+                            <div class="perfil-profiles">
+                                <div class="img-profile"></div>
+                                <div class="name-profile">
+                                    <a href="#">Jenny Villa</a>
+                                    <p>1 day ago</p>
+                                </div>
+                            </div> 
+                            <p>4 albuns</p>
+                        </div>
+
+                        <div class="card-profile">
+                            <div class="perfil-profiles">
+                                <div class="img-profile"></div>
+                                <div class="name-profile">
+                                    <a href="#">Jenny Villa</a>
+                                    <p>1 day ago</p>
+                                </div>
+                            </div> 
+                            <p>4 albuns</p>
+                        </div>
+
+                        <div class="card-profile">
+                            <div class="perfil-profiles">
+                                <div class="img-profile"></div>
+                                <div class="name-profile">
+                                    <a href="#">Jenny Villa</a>
+                                    <p>1 day ago</p>
+                                </div>
+                            </div> 
+                            <p>4 albuns</p>
+                        </div>
                     </div>
                 </div>
-                
-            </div>
+                <div class="right">
+                    <h2>Tracks</h2>
+                    <div class="container">
+                        
+                        <div class="card-tracks">
+                            <img src="./assets/track1.jpg" alt="">
+                            <a href="#">Mehara Bon</a>
+                            <p>Sexy in Paris</p>
+                        </div>
+                        <div class="card-tracks">
+                            <img src="./assets/track2.jpg" alt="">
+                            <a href="#">Mehara Bon</a>
+                            <p>Sexy in Paris</p>
+                        </div>
+                        <div class="card-tracks">
+                            <img src="./assets/track3.jpg" alt="">
+                            <a href="#">Mehara Bon</a>
+                            <p>Sexy in Paris</p>
+                        </div>
+                        <div class="card-tracks">
+                            <img src="./assets/track4.jpg" alt="">
+                            <a href="#">Mehara Bon</a>
+                            <p>Sexy in Paris</p>
+                        </div>
+                        <div class="card-tracks">
+                            <img src="./assets/track5.jpg" alt="">
+                            <a href="#">Mehara Bon</a>
+                            <p>Sexy in Paris</p>
+                        </div>
+                        <div class="card-tracks">
+                            <img src="./assets/track6.jpg" alt="">
+                            <a href="#">Mehara Bon</a>
+                            <p>Sexy in Paris</p>
+                        </div>
+                        <div class="card-tracks">
+                            <img src="./assets/track7.jpg" alt="">
+                            <a href="#">Mehara Bon</a>
+                            <p>Sexy in Paris</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </section>
         </main>
     </section>
+    <script>
+        const toggleMenu = document.querySelector('.toggle-menu');
+        const menu = document.querySelector('.sidebar')
+        toggleMenu.addEventListener('click',(e)=>{
+            toggleMenu.classList.toggle('active');
+            menu.classList.toggle('active');
+        })
+    </script>
 </body>
 </html>
-
-<!-- Search artists, playlists or tracks
-Dany Schudler
-Edit Profile
-Overview
-News
-Playlists
-Discover
-Dashboard
-Messages
-Notifications
-Account
-Featured Playlists
-Profile Views
-Tracks -->
